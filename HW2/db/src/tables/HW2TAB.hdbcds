@@ -1,8 +1,9 @@
 ﻿namespace HiMTA;
 
 using HiMTA::User;
-
 context HW2TAB{
+
+
 
 		entity Catalog {
 		    @Comment: 'Id of travel tour'
@@ -13,6 +14,8 @@ context HW2TAB{
 		    datato : LocalDate;
 		    @Comment: 'Travel place'
 		    place : String(60);
+			
+			toPriceList : Association to PriceList;
 		};
 
 		entity PriceList {
