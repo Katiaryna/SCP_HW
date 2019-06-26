@@ -1,0 +1,51 @@
+﻿namespace HiMTA;
+
+using HiMTA::User;
+
+context HW2TAB{
+
+		entity Catalog {
+		    @Comment: 'Id of travel tour'
+		    key travtour : String(4);
+		    @Comment: 'Travel tour data from'
+		    datafrom : LocalDate;
+		    @Comment: 'Travel tour data to'
+		    datato : LocalDate;
+		    @Comment: 'Travel place'
+		    place : String(60);
+		};
+
+		entity PriceList {
+		    @Comment: 'Id of travel tour'
+		    key travtour : String(4);
+		    @Comment: 'Retail price'
+		    retprice : DecimalFloat;
+		    @Comment: 'Wholesale price'
+		    wholprice : DecimalFloat;
+		};
+
+		entity Orders {
+		    @Comment: 'Id of order'
+		    key ordernum : String(4);
+		    @Comment: 'Id of travel tour'
+		    key travtour : String(4);
+		    @Comment: 'Date of order'
+		    orderdate : LocalDate;
+		};
+
+		entity Customers {
+		    @Comment: 'Id of Customer'
+		    key custid : String(4);
+		    @Comment: 'FIO'
+		    fio : String(300);
+		    @Comment: 'Passport'
+		    passport : String(100);
+		};
+
+		entity Ordcust {
+		    @Comment: 'Id of order'
+		    key ordernum : String(4);
+		    @Comment: 'Id of Customer'
+		    key custid : String(4);
+		};
+};

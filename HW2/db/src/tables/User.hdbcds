@@ -1,0 +1,16 @@
+namespace HiMTA;
+
+using HiMTA::HW2TAB.Catalog;
+using HiMTA::HW2TAB.PriceList;
+using HiMTA::HW2TAB.Orders;
+using HiMTA::HW2TAB.Customers;
+using HiMTA::HW2TAB.Ordcust;
+
+
+entity User {
+    @Comment: 'Id of User'
+    key usid : String(4);
+    @Comment: 'Description'
+    name : String(100);
+
+};
