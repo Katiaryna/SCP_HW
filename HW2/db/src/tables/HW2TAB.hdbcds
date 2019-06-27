@@ -35,7 +35,7 @@ context HW2TAB{
 		    @Comment: 'Date of order'
 		    orderdate : LocalDate;
 
-			toCatalog: Association[1] to Catalog on toCatalog.travtour = travtour;
+			toCatalog: Association[0..1] to Catalog on toCatalog.travtour = travtour;
 			toOrdcust1 : Association[1..*] to Ordcust on toOrdcust1.ordernum = ordernum;
 		};
 
