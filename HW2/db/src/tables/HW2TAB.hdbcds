@@ -34,6 +34,7 @@ context HW2TAB{
 		    key travtour : String(4);
 		    @Comment: 'Date of order'
 		    orderdate : LocalDate;
+			toOrdcust1 : Association[1..*] to Ordcust on toOrdcust1.ordernum = ordernum;
 		};
 
 		entity Customers {
@@ -43,6 +44,7 @@ context HW2TAB{
 		    fio : String(300);
 		    @Comment: 'Passport'
 		    passport : String(100);
+			toOrdcust2 : Association[1..*] to Ordcust on toOrdcust2.custid = custid;
 		};
 
 		entity Ordcust {
