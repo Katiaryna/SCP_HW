@@ -14,7 +14,7 @@ context HW2TAB{
 		    @Comment: 'Travel place'
 		    place : String(60);
 			
-			toPriceList : Association to PriceList;
+			toPriceList : Association[1..1] to PriceList on toPriceList.travtour = travtour;
 			toOrders    : Association[1..*] to Orders on toOrders.travtour = travtour;
 		};
 
