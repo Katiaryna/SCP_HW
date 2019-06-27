@@ -6,7 +6,6 @@ using HiMTA::HW2TAB.Orders;
 using HiMTA::HW2TAB.Customers;
 using HiMTA::HW2TAB.Ordcust;
 
-
 entity User {
     @Comment: 'Id of User'
     key usid : String(4);
