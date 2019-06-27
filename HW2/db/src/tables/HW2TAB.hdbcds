@@ -15,7 +15,7 @@ context HW2TAB{
 		    place : String(60);
 			
 			toPriceList : Association[1..1] to PriceList on toPriceList.travtour = travtour;
-			toOrders    : Association[1..*] to Orders on toOrders.travtour = travtour;
+			toOrders    : Association[*] to Orders on toOrders.travtour = travtour;
 		};
 
 		entity PriceList {
@@ -34,6 +34,8 @@ context HW2TAB{
 		    key travtour : String(4);
 		    @Comment: 'Date of order'
 		    orderdate : LocalDate;
+
+			toCatalog: Association[1] to Catalog on toCatalog.travtour = travtour;
 			toOrdcust1 : Association[1..*] to Ordcust on toOrdcust1.ordernum = ordernum;
 		};
 
