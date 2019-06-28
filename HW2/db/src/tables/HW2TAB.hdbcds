@@ -7,12 +7,12 @@ context HW2TAB{
 		entity Catalog {
 		    @Comment: 'Id of travel tour'
 		    key travtour : String(4);
-		    @Comment: 'Travel tour data from'
-		    datafrom : LocalDate;
-		    @Comment: 'Travel tour data to'
-		    datato : LocalDate;
-		    @Comment: 'Travel place'
-		    place : String(60);
+		    @Comment: 'Travel place from'
+		    fromplace : String(50);
+			@Comment: 'Travel place to'
+		    toplace : String(50);
+			@Comment: 'Hotel'
+		    hotel : String(60);
 			
 			toPriceList : Association[1..1] to PriceList on toPriceList.travtour = travtour;
 			toOrders    : Association[1..*] to Orders on toOrders.travtour = travtour;
