@@ -46,6 +46,7 @@ context HW2TAB{
 		    fio : String(300);
 		    @Comment: 'Passport'
 		    passport : String(100);
+			
 			toOrdcust2 : Association[1..*] to Ordcust on toOrdcust2.custid = custid;
 		};
 
