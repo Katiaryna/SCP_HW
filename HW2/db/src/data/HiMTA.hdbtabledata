@@ -1,0 +1,21 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "HiMTA::HW2TAB.Catalog",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "HiMTA::Catalog.csv",
+        "has_header": true
+      },
+      "import_settings": {
+        "import_columns": [
+					"travtour",
+					"fromplace",
+					"toplace",
+					"hotel"
+        ]
+      }
+    }
+  ]
+}
