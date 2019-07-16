@@ -2,6 +2,6 @@ npm WARN deploy@ No description
 npm WARN deploy@ No repository field.
 npm WARN deploy@ No license field.
 
-audited 42 packages in 1.276s
+audited 42 packages in 0.971s
 found 2 high severity vulnerabilities
   run `npm audit fix` to fix them, or `npm audit` for details
