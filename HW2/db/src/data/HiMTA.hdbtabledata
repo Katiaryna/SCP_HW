@@ -60,6 +60,21 @@
           "orderdate"
         ]
       }
+    },
+    {
+      "target_table": "HiMTA::HW2TAB.Customers",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "HiMTA::Customers.csv",
+        "has_header": true
+      },
+      "import_settings": {
+        "import_columns": [
+					"custid",
+          "fio",
+          "passport"
+        ]
+      }fio
     }
   ]
 }
