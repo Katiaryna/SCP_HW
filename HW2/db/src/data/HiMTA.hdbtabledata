@@ -75,6 +75,20 @@
           "passport"
         ]
       }
+    },
+    {
+      "target_table": "HiMTA::HW2TAB.Ordcust",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "HiMTA::Ordcust.csv",
+        "has_header": true
+      },
+      "import_settings": {
+        "import_columns": [
+					"ordernum",
+          "custid"
+        ]
+      }
     }
   ]
 }
