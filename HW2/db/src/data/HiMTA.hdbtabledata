@@ -30,6 +30,36 @@
 					"hotel"
         ]
       }
+    },
+    {
+      "target_table": "HiMTA::HW2TAB.PriceList",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "HiMTA::PriceList.csv",
+        "has_header": true
+      },
+      "import_settings": {
+        "import_columns": [
+					"travtour",
+          "retprice",
+          "wholprice"
+        ]
+      }
+    },
+    {
+      "target_table": "HiMTA::HW2TAB.Orders",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "HiMTA::Orders.csv",
+        "has_header": true
+      },
+      "import_settings": {
+        "import_columns": [
+					"ordernum",
+          "travtour",
+          "orderdate"
+        ]
+      }
     }
   ]
 }
