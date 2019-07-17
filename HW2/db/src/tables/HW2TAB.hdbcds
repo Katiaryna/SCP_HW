@@ -55,5 +55,8 @@ context HW2TAB{
 		    key ordernum : String(4);
 		    @Comment: 'Id of Customer'
 		    key custid : String(4);
+
+			toOrderscust : Association to Orders on toOrderscust.ordernum = ordernum;
+			toCustomers : Association to Customers on toCustomers.custid = custid;
 		};
 };
