@@ -89,13 +89,13 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 [main] INFO org.eclipse.che.commons.lang.concurrent.ThreadLocalPropagateContext - using a no-op implementation of interface org.eclipse.che.commons.lang.concurrent.ThreadLocalWrapper
 [main] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: created 3 verification tasks
 [pool-1-thread-1] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: started symbol resource[lev_hdi]
-[pool-1-thread-2] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: started symbol module[db]
 [pool-1-thread-3] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: started symbol module[service]
+[pool-1-thread-2] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: started symbol module[db]
 [pool-1-thread-1] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: finished symbol resource[lev_hdi]
 [pool-1-thread-3] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'service': command timeout is 300 seconds
 [pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'db': command timeout is 300 seconds
-[pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'db': command output file is D:\Katsiaryna_Darapeika\SAP_Course\LeverX_Courses\SCP_HW\HW2\.mta\modulebuild6473465556073144734.txt
-[pool-1-thread-3] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'service': command output file is D:\Katsiaryna_Darapeika\SAP_Course\LeverX_Courses\SCP_HW\HW2\.mta\modulebuild9212136883132161052.txt
+[pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'db': command output file is D:\Katsiaryna_Darapeika\SAP_Course\LeverX_Courses\SCP_HW\HW2\.mta\modulebuild2521557459774123927.txt
+[pool-1-thread-3] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'service': command output file is D:\Katsiaryna_Darapeika\SAP_Course\LeverX_Courses\SCP_HW\HW2\.mta\modulebuild263831844756348314.txt
 [pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'db': invoking command [npm.cmd, install, --production]
 [pool-1-thread-3] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'service': invoking command [npm.cmd, install, --production]
 [pool-1-thread-2] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA HiMTA: finished symbol module[db]
