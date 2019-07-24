@@ -1,0 +1,9 @@
+﻿namespace HiMTA;
+using HiMTA::HW2TAB.Catalog;
+
+view MyViewCatalog as select from Catalog
+{
+travtour,
+fromplace,
+toplace
+};
