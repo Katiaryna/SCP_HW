@@ -1,9 +1,11 @@
 ﻿namespace HiMTA;
+
 using HiMTA::HW2TAB.Catalog;
+using HiMTA::HW2TAB.Orders;
+using HiMTA::HW2TAB.PriceList;
 
 view MyViewCatalog as select from Catalog
 {
 travtour,
-fromplace,
-toplace
+fromplace || '->' || toplace as direction
 };
