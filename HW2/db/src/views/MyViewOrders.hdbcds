@@ -4,7 +4,7 @@ using HiMTA::HW2TAB.Catalog;
 using HiMTA::HW2TAB.Orders;
 using HiMTA::HW2TAB.PriceList;
 
-view MyViewCatalog as select from Catalog
+view MyViewOrders as select from Catalog
 {
 travtour,
 fromplace || '->' || toplace as direction
